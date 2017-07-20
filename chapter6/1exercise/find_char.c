@@ -12,9 +12,9 @@ main()
 	char *a;
 	a = find_char(source,chars);
 	
-//	if(a == NULL)
-//		printf("a == NULL\n");
-//	else
+	if(a == NULL)
+		printf("a == NULL\n");
+	else
 		printf("%c\n",*a);
 
 	return 0;
@@ -23,11 +23,11 @@ char *
 find_char( char const *source, char const *chars)
 {
 	
-//	if(source == NULL || chars == NULL)
-//	{
-//		printf("字符串不能为空\n");
-//		return NULL;
-//	}
+	if(source == NULL || chars == NULL)
+	{
+		printf("字符串不能为空\n");
+		return NULL;
+	}
 	char *ptr1;
 	char *ptr2;
 	for (ptr2 = chars ; *ptr2 != '\0'; ptr2++)
