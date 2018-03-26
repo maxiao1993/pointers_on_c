@@ -16,8 +16,9 @@ void
 reverse_string( char *string)
 {
 	char * ptr = string;
-	while(*ptr++ != '\0')
+	while(*ptr++ != '\0')	// 尝试将指针移到字符串最后
 		;
+
 	//这里用了两次自减1，因为上面的代码，指针指向‘\0’后又加了1，要指向最后一个字符，就得减两次。
 	//使用for循环就只自减1次。
 	ptr--;
