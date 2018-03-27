@@ -49,9 +49,9 @@ del_substr(char *str, char const *substr)
 char *
 match(char *str, char const *substr)
 {
-	while(*substr != '\0')
+	while(*substr != '\0')				//这里的指针不用自动加一，而是下面的if语句用来判断。
 	{
-		if(*str++ != *substr++)
+		if(*str++ != *substr++)			//这边进行判断。
 		{
 			return NULL;
 		}
